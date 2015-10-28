@@ -9,7 +9,8 @@ func test(msg string) {
 }
 
 func main() {
-	for i := 0; i < 10; i++ {
+	fmt.Println("Press enter after 10 threads have executed")
+	for i := 1; i <= 10; i++ {
 		go test(fmt.Sprintf("thread%v", i))
 	}
 
