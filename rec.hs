@@ -1,6 +1,5 @@
 printList :: (Show a) => [a] -> IO()
-printList [] = return ()
-printList (x:xs) = do { print x ; printList xs }
+printList = mapM_ print
 
 sum' :: (Num a) => [a] -> a
 sum' [] = 0
