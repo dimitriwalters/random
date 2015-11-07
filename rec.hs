@@ -10,3 +10,6 @@ dot :: (Num a) => [a] -> [a] -> a
 dot [] _ = 0
 dot _ [] = 0
 dot (x:xs) (y:ys) = x * y + dot xs ys
+
+sum'' :: (Num a) => [a] -> a
+sum'' = foldl1 (+)
