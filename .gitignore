@@ -1,6 +1,1 @@
 *.beam
-*.o
-*.hi
-fac
-par
-hello
